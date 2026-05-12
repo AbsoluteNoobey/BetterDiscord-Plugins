@@ -3,6 +3,7 @@
  * @author AbsoluteNoobey
  * @version 1.0.0
  * @description Prevents Discord from auto-disconnecting you when alone in a voice/DM call.
+ * @source https://github.com/AbsoluteNoobey/BetterDiscord-Plugins/blob/main/NoIdleKick/NoIdleKick.plugin.js
  * @website https://github.com/AbsoluteNoobey/BetterDiscord-Plugins
  */
 
@@ -71,8 +72,6 @@ module.exports = class NoIdleKick {
             }
         );
         this.patches.push(unpatchSelect);
-
-        BdApi.UI.showToast("NoIdleKick active.", { type: "success", timeout: 3000 });
     }
 
     stop() {
